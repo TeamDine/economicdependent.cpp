@@ -2,10 +2,15 @@
 ///Implementación de la clase de Dependientes económicos
 #include "economicdependent.h"
 
-EconomicDependent::EconomicDependent() { }
+///Constructor base
+EconomicDependent::EconomicDependent() { 
+    age = 0;
+}
 
+///Constructor Copia
 EconomicDependent::EconomicDependent(const EconomicDependent& e) : name(e.name), age(e.age) { }
 
+///Constructor Parametrizado
 EconomicDependent::EconomicDependent(const Name& n, int& a) : name(n), age(a) { }
 
 Name EconomicDependent::getName() {
