@@ -21,11 +21,11 @@ int EconomicDependent::getAge() {
     return age;
     }
 
-void EconomicDependent::setLast(const Name& n) {
+void EconomicDependent::setName(const Name& n) {
     name = n;
     }
 
-void EconomicDependent::setFirst(const int& a) {
+void EconomicDependent::setAge(const int& a) {
     age = a;
     }
 
